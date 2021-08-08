@@ -934,9 +934,22 @@ button:not(:disabled),
     .p-sm-5 {
         padding: 3rem !important;
     }
+    .paragraphe-prix {
+        width: 500px;
+    }
+    .bloc-prix {
+        width: 550px;
+    }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+    .grand-bloc-module {
+        width: 600px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 991.98px) {
     .mx-lg-5 {
         margin-right: 3rem !important;
         margin-left: 3rem !important;
@@ -947,40 +960,6 @@ button:not(:disabled),
     .ms-lg-5 {
         margin-left: 3rem !important;
     }
-}
-
-@media (min-width: 1200px) {
-    .fs-1 {
-        font-size: 2.5rem !important;
-    }
-    .fs-2 {
-        font-size: 2rem !important;
-    }
-    .fs-4 {
-        font-size: 1.5rem !important;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .paragraphe-prix {
-        width: 250px;
-    }
-    .bloc-prix {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media (min-width: 576px) {
-    .paragraphe-prix {
-        width: 500px;
-    }
-    .bloc-prix {
-        width: 550px;
-    }
-}
-
-@media (min-width: 991.98px) {
     .prix {
         border-top-left-radius: 30%;
         border-bottom-right-radius: 30%;
@@ -995,11 +974,48 @@ button:not(:disabled),
     .bloc-prix {
         width: 805px;
     }
+    .card-body {
+        height: 180px;
+    }
+    .grand-bloc-module {
+        width: 900px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .fs-1 {
+        font-size: 2.5rem !important;
+    }
+    .fs-2 {
+        font-size: 2rem !important;
+    }
+    .fs-4 {
+        font-size: 1.5rem !important;
+    }
+    .grand-bloc-module {
+        width: 1200px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .paragraphe-prix {
+        width: 250px;
+    }
+    .bloc-prix {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 767.98px) {
     .card {
         width: 280px;
+    }
+    .grand-bloc-module {
+        width: 300px;
+        margin: auto;
     }
 }
 
@@ -1088,9 +1104,14 @@ hr {
     width: 250px;
 }
 
+.bloc-module {
+    min-width: 200px;
+    width: 280px;
+}
+
 .bloc-droite {
     position: fixed;
-    bottom: 2vh;
+    bottom: 1vh;
     right: 2vw;
 }
 
